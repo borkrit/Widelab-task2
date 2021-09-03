@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="segment">
+            <h1>Registration</h1>
+        </div>
+        <form data-validate>
+            <label>
+                <input type="name" id="name" placeholder="Name" required />
+            </label>
+
+            <label>
+                <input type="email" id="email" name="email" placeholder="Email Address" required />
+            </label>
+                        
+            <label class="zipcode">
+                <input type="number" id="zipcode" placeholder="zipcode" maxlength="5" required>
+            </label>
+            <label class="age">
+                <input type="number" id="age" min="18" max="99" placeholder="Age" required>
+            </label>
+            <div class="radioBox">
+                <label>
+                    <input type="radio" name="gender" required>
+                    <span class="male">Male</span>
+                </label>
+                <label>
+                    <input type="radio" name="gender" required>
+                    <span class="female">Female</span>
+                </label>
+            </div>
+            <label>
+                <input type="checkbox" name="terms" required >  
+                <span >I agree to the Terms & Conditions</span>
+            </label>
+
+
+            <button type="submit" class="btn ">
+                Submit
+            </button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/validate/dist/validate.min.js"></script>
+    <script src="/index.js"></script>
+</body>
+
+</html>

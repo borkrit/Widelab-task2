@@ -1,0 +1,129 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.box {
+	
+	background-color: #ebecf0;
+	width: 30%;
+	margin: 20px auto;
+	border-radius: 20px;
+}
+
+
+
+div{
+	color: #babecc;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+form {
+	padding: 16px;
+	width: 320px;
+	margin: 0 auto;
+	display: flex;
+flex-wrap: wrap;
+}
+.error-message{
+	color:red;
+	display: flex;
+}
+.error-message::before{
+	content:'';
+	background-image: url('/alert-circle.svg');
+	display: block;
+	width: 25px;
+	height: 25px;
+
+}
+svg{
+	color:red
+}
+.segment {
+	padding-top: 20px;
+	text-align: center;
+}
+
+button,
+input {
+	border: 0;
+	outline: 0;
+	font-size: 16px;
+	border-radius: 320px;
+	padding: 16px;
+	background-color: #ebecf0;
+	text-shadow: 1px 1px 0 #fff;
+}
+
+label {
+	display: block;
+	margin-bottom: 24px;
+	width: 100%;
+}
+
+input {
+	margin-right: 8px;
+	box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+	width: 100%;
+	box-sizing: border-box;
+	transition: all 0.2s ease-in-out;
+	appearance: none;
+	-webkit-appearance: none;
+}
+
+input:focus {
+	box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+
+
+.btn {
+	color: #61677c;
+	font-weight: bold;
+	box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+	width: 100%;
+	font-weight: 600;
+}
+
+.btn:hover {
+	color:green;
+	box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+}
+
+.btn:active {
+	box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+
+.radioBox {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+.radioBox label{
+	width: 20px;
+}
+.radioBox input:focus {
+
+	box-shadow: inset 1px 1px 2px #1041ed, inset -1px -1px 2px #fff;
+}
+.radioBox input:checked {
+
+	box-shadow: inset 1px 1px 2px red, inset -1px -1px 2px #fff;
+}
+
+input[name='terms']{
+	width: auto;
+
+border-radius: 0;
+font-size: 10px;
+padding: 10px;
+}
+label span{
+	color:rgba(79, 73, 73, 0.433)
+}
+input[name='terms']:checked{
+	background-image:url('/check.svg');
+	box-shadow:none;
+}
