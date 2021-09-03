@@ -31,7 +31,7 @@ flex-wrap: wrap;
 }
 .error-message::before{
 	content:'';
-	background-image: url('/alert-circle.svg');
+	background-image: url('alert-circle.svg');
 	display: block;
 	width: 25px;
 	height: 25px;
@@ -124,6 +124,6 @@ label span{
 	color:rgba(79, 73, 73, 0.433)
 }
 .chekBox input:checked{
-	background-image:url('/check.svg');
+	background-image:url('check.svg');
 	box-shadow:none;
 }
